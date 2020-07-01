@@ -102,7 +102,7 @@ $ git push --set-upstream fork your-branch-name
 ### Executando os testes
 Execute a suite básica de testes com o pytest.
 ```shell script
-$ pytest
+$ pytest -v
 ```
 Esse comando executa os testes no ambiente atual, que normalmente é suficiente.
 O CI executará a suite completa de testes quando submeter a pull request.
@@ -116,8 +116,7 @@ $ tox
 A geração de um relatório de linhas que não possuem cobertura de teste pode indicar por onde começar a contribuir.
 Execute pytest usando o coverage e gere um relatório.
 ```shell script
-$ coverage run -m pytest
-$ coverage html
+$ pytest --cov=src --cov-report=term-missing
 ```
-Abra o arquivo htmlcov/index.html no seu navegador e explore o relatório.
-Saiba mais sobre o [coverage](https://coverage.readthedocs.io/).
+O report será exibito na tela
+Saiba mais sobre o [pytest-cov](https://github.com/pytest-dev/pytest-cov).

@@ -2,4 +2,4 @@
 pip-tools
 pre-commit
 tox
-coverage
+pytest-cov

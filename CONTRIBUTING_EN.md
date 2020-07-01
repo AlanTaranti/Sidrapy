@@ -93,7 +93,7 @@ $ git push --set-upstream fork your-branch-name
 ### Running the tests
 Run the basic test suite with pytest.
 ```shell script
-$ pytest
+$ pytest -v
 ```
 This runs the tests for the current environment, which is usually sufficient. CI will run the full suite when you submit your pull request.
 
@@ -103,10 +103,10 @@ $ tox
 ```
 
 ### Running test coverage
-Generating a report of lines that do not have test coverage can indicate where to start contributing. Run pytest using coverage and generate a report.
+Generating a uncovered lines report may give a hint where to start contributing.
+Run pytest using coverage to generate a report.
 ```shell script
-$ coverage run -m pytest
-$ coverage html
+$ pytest --cov=src --cov-report=term-missing
 ```
-Open htmlcov/index.html in your browser to explore the report.
-Read more about [coverage](https://coverage.readthedocs.io/).
+The report will be printed on screen.
+More about [pytest-cov](https://github.com/pytest-dev/pytest-cov).
