@@ -1,0 +1,477 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1"><title>
+	Apresenta os códigos das dimensões e suas listas de opções
+</title><link id="Link1" rel="stylesheet" type="text/css" href="Content/Estilo.css" />
+<script type="text/javascript" language="JavaScript"> 
+<!--
+
+// Abre a janela para a lista de unidades territoriais
+function abreJanelaListaUnidadesTerritoriais(codTabl, codNivt, idioma) {
+    var w;
+    w = window.open("/LisUnitTabAPI.aspx?c=" + codTabl + "&n=" + codNivt + "&i=" + idioma, "LisUnitTabAPI", "scrollbars=yes,resizable=yes,width=450,height=490,left=428,top=1");
+    w.focus();
+}
+
+//-->
+</script>
+</head>
+
+<body>
+<form method="post" action="./desctabapi.aspx?c=1612" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="7E148CA2" />
+
+    <p>
+    <span id="lblMensagem" class="mensagemErro"></span>
+    </p>
+             
+    <div id="pnlConteudo">
+	 
+    
+    <table>
+        <tr valign="top">
+            <td><span style="color:Red; font-weight:bold">/T/&nbsp;&nbsp;</span><span class="tituloTabelaDesc">Tabela:</span>&nbsp;&nbsp;</td>
+            <td class="semQuebra"><span id="lblNumeroTabela" class="tituloTabelaNro">1612</span>&nbsp;-&nbsp;</td>
+            <td><span id="lblNomeTabela" class="tituloTabelaDesc">Área plantada, área colhida, quantidade produzida, rendimento médio e valor da produção das lavouras temporárias</span></td>
+        </tr>
+    </table>
+   
+    <p>          
+    <span class="tituloLinha">Pesquisa:</span>&nbsp;&nbsp;<span id="lblNomePesquisa">Produção Agrícola Municipal</span>           
+    </p>
+    
+    <p>               
+    <span class="tituloLinha">Assunto:</span>&nbsp;&nbsp;<span id="lblNomeAssunto">Lavouras temporárias</span>    
+    </p>           
+    
+    <p>                      
+    <span style="color:Red; font-weight:bold">/P/&nbsp;&nbsp;</span><span id="lblNomePeriodo" class="tituloLinha">Ano(45):</span>&nbsp;&nbsp;<span id="lblPeriodoDisponibilidade" style="color:Red;">1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018</span>     
+    </p>
+               
+    <p>             
+    <span style="color:Red; font-weight:bold">/V/&nbsp;&nbsp;</span><span id="lblVariaveis" class="tituloLinha">Variável(8):</span>
+    
+            <table id="tabPrincipal" cellspacing="2">
+                
+            <tr>
+                <td>
+                    <span id="lstVariaveis_lblIdVariavel_0" style="color:Red">109</span>&nbsp;&nbsp;<span id="lstVariaveis_lblNomeVariavel_0">Área plantada (Hectares) [1988 a 2018] - casas decimais:  padrão = 0, máximo = 0</span>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <span id="lstVariaveis_lblIdVariavel_1" style="color:Red">1000109</span>&nbsp;&nbsp;<span id="lstVariaveis_lblNomeVariavel_1" style="color:#505050">Área plantada - percentual do total geral (%) [1988 a 2018] - casas decimais:  padrão = 2, máximo = 5</span>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <span id="lstVariaveis_lblIdVariavel_2" style="color:Red">216</span>&nbsp;&nbsp;<span id="lstVariaveis_lblNomeVariavel_2">Área colhida (Hectares) - casas decimais:  padrão = 0, máximo = 0</span>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <span id="lstVariaveis_lblIdVariavel_3" style="color:Red">1000216</span>&nbsp;&nbsp;<span id="lstVariaveis_lblNomeVariavel_3" style="color:#505050">Área colhida - percentual do total geral (%) - casas decimais:  padrão = 2, máximo = 5</span>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <span id="lstVariaveis_lblIdVariavel_4" style="color:Red">214</span>&nbsp;&nbsp;<span id="lstVariaveis_lblNomeVariavel_4">Quantidade produzida (Toneladas) - casas decimais:  padrão = 0, máximo = 0</span>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <span id="lstVariaveis_lblIdVariavel_5" style="color:Red">112</span>&nbsp;&nbsp;<span id="lstVariaveis_lblNomeVariavel_5">Rendimento médio da produção (Quilogramas por Hectare) - casas decimais:  padrão = 0, máximo = 0</span>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <span id="lstVariaveis_lblIdVariavel_6" style="color:Red">215</span>&nbsp;&nbsp;<span id="lstVariaveis_lblNomeVariavel_6">Valor da produção (Mil Cruzeiros [1974 a 1985, 1990 a 1992], Mil Cruzados [1986 a 1988], Mil Cruzados Novos [1989], Mil Cruzeiros Reais [1993], Mil Reais [1994 a 2018]) - casas decimais:  padrão = 0, máximo = 0</span>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <span id="lstVariaveis_lblIdVariavel_7" style="color:Red">1000215</span>&nbsp;&nbsp;<span id="lstVariaveis_lblNomeVariavel_7" style="color:#505050">Valor da produção - percentual do total geral (%) - casas decimais:  padrão = 2, máximo = 5</span>
+                </td>
+            </tr>
+        
+            </table>
+        
+    <br />                                                                
+    
+            <table id ="tabPrincipal" cellspacing="2">
+                
+            <tr>
+                <td>
+                    <span style="color:Red; font-weight:bold">/C</span><span id="lstClassificacoes_lblIdClassificacao_0" style="color:Red; font-weight:bold">81</span><span style="color:Red; font-weight:bold">/</span>
+                    &nbsp;<span id="lstClassificacoes_lblClassificacao_0" class="tituloLinha">Produto das lavouras temporárias</span><span id="lstClassificacoes_lblQuantidadeCategorias_0" class="tituloLinha">(34):</span>                   
+                    
+                            <table id="tabPrincipal" cellpadding="2">
+                                
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_0" style="color:Red">0</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_0">Total</span> 
+                                                                           
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_1" style="color:Red">2688</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_1">Abacaxi</span> 
+                                                                           
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_2" style="color:Red">40471</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_2">Alfafa fenada</span> 
+                                                                           
+                                    <span id="lstClassificacoes_lstCategorias_0_lblPeriodoDisponibilidade_2">[1974 a 1987]</span>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_3" style="color:Red">2689</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_3">Algodão herbáceo (em caroço)</span> 
+                                                                           
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_4" style="color:Red">2690</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_4">Alho</span> 
+                                                                           
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_5" style="color:Red">2691</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_5">Amendoim (em casca)</span> 
+                                                                           
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_6" style="color:Red">2692</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_6">Arroz (em casca)</span> 
+                                                                           
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_7" style="color:Red">2693</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_7">Aveia (em grão)</span> 
+                                                                           
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_8" style="color:Red">2694</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_8">Batata-doce</span> 
+                                                                           
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_9" style="color:Red">2695</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_9">Batata-inglesa</span> 
+                                                                           
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_10" style="color:Red">2696</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_10">Cana-de-açúcar</span> 
+                                                                           
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_11" style="color:Red">40470</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_11">Cana para forragem</span> 
+                                                                           
+                                    <span id="lstClassificacoes_lstCategorias_0_lblPeriodoDisponibilidade_11">[1974 a 1987]</span>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_12" style="color:Red">2697</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_12">Cebola</span> 
+                                                                           
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_13" style="color:Red">2698</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_13">Centeio (em grão)</span> 
+                                                                           
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_14" style="color:Red">2699</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_14">Cevada (em grão)</span> 
+                                                                           
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_15" style="color:Red">2700</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_15">Ervilha (em grão)</span> 
+                                                                           
+                                    <span id="lstClassificacoes_lstCategorias_0_lblPeriodoDisponibilidade_15">[1988 a 2018]</span>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_16" style="color:Red">2701</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_16">Fava (em grão)</span> 
+                                                                           
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_17" style="color:Red">2702</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_17">Feijão (em grão)</span> 
+                                                                           
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_18" style="color:Red">2703</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_18">Fumo (em folha)</span> 
+                                                                           
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_19" style="color:Red">109179</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_19">Girassol (em grão)</span> 
+                                                                           
+                                    <span id="lstClassificacoes_lstCategorias_0_lblPeriodoDisponibilidade_19">[2005 a 2018]</span>
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_20" style="color:Red">2704</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_20">Juta (fibra)</span> 
+                                                                           
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_21" style="color:Red">2705</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_21">Linho (semente)</span> 
+                                                                           
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_22" style="color:Red">2706</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_22">Malva (fibra)</span> 
+                                                                           
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_23" style="color:Red">2707</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_23">Mamona (baga)</span> 
+                                                                           
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_24" style="color:Red">2708</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_24">Mandioca</span> 
+                                                                           
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_25" style="color:Red">2709</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_25">Melancia</span> 
+                                                                           
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_26" style="color:Red">2710</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_26">Melão</span> 
+                                                                           
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_27" style="color:Red">2711</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_27">Milho (em grão)</span> 
+                                                                           
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_28" style="color:Red">2712</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_28">Rami (fibra)</span> 
+                                                                           
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_29" style="color:Red">2713</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_29">Soja (em grão)</span> 
+                                                                           
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_30" style="color:Red">2714</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_30">Sorgo (em grão)</span> 
+                                                                           
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_31" style="color:Red">2715</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_31">Tomate</span> 
+                                                                           
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_32" style="color:Red">2716</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_32">Trigo (em grão)</span> 
+                                                                           
+                                    
+                                </td>
+                            </tr>
+                        
+                            <tr>
+                                <td>
+                                    <span id="lstClassificacoes_lstCategorias_0_lblIdCategoria_33" style="color:Red">109180</span>&nbsp;&nbsp;<span id="lstClassificacoes_lstCategorias_0_lblNomeCategoria_33">Triticale (em grão)</span> 
+                                                                           
+                                    <span id="lstClassificacoes_lstCategorias_0_lblPeriodoDisponibilidade_33">[2005 a 2018]</span>
+                                </td>
+                            </tr>
+                        
+                            </table>
+                        
+                    <br />
+                    <span id="lstClassificacoes_lblObservacaoTotalizacaoDimensaoClassificacao_0"><font color="Black">Totalização de categorias não disponível para as variáveis 'Quantidade produzida', 'Rendimento médio da produção'.</font></span><br /><br />
+                    <span id="lstClassificacoes_lblObservacaoSomaDimensaoClassificacao_0"><font color="Black">Soma de categorias não disponível para a variável 'Rendimento médio da produção'.</font></span>
+                </td>
+            </tr>
+        
+            </table>
+        
+    </p>                               
+    
+    <p>                          
+    <span id="lblNivelterritorial" class="tituloLinha">Níveis Territoriais:</span>
+    
+            <table id="tabPrincipal" cellspacing="2">
+                
+            <tr>
+                <td>
+                    <span style="color:Red; font-weight:bold">/N</span><span id="lstNiveisTerritoriais_lblIdNivelterritorial_0" style="color:Red; font-weight:bold">1</span><span style="color:Red; font-weight:bold">/</span>
+                    <span id="lstNiveisTerritoriais_lblNomeNivelterritorial_0">Brasil</span><span id="lstNiveisTerritoriais_lblQuantidadeUnidadesTerritoriais_0">(1)</span>
+                    &nbsp;&nbsp;<a id="lstNiveisTerritoriais_hlkListaUnidadesTerritoriais_0" href="javascript: abreJanelaListaUnidadesTerritoriais(1612,1,&#39;P&#39;)">Listar unidades territoriais</a>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <span style="color:Red; font-weight:bold">/N</span><span id="lstNiveisTerritoriais_lblIdNivelterritorial_1" style="color:Red; font-weight:bold">2</span><span style="color:Red; font-weight:bold">/</span>
+                    <span id="lstNiveisTerritoriais_lblNomeNivelterritorial_1">Grande Região</span><span id="lstNiveisTerritoriais_lblQuantidadeUnidadesTerritoriais_1">(5)</span>
+                    &nbsp;&nbsp;<a id="lstNiveisTerritoriais_hlkListaUnidadesTerritoriais_1" href="javascript: abreJanelaListaUnidadesTerritoriais(1612,2,&#39;P&#39;)">Listar unidades territoriais</a>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <span style="color:Red; font-weight:bold">/N</span><span id="lstNiveisTerritoriais_lblIdNivelterritorial_2" style="color:Red; font-weight:bold">3</span><span style="color:Red; font-weight:bold">/</span>
+                    <span id="lstNiveisTerritoriais_lblNomeNivelterritorial_2">Unidade da Federação</span><span id="lstNiveisTerritoriais_lblQuantidadeUnidadesTerritoriais_2">(27)</span>
+                    &nbsp;&nbsp;<a id="lstNiveisTerritoriais_hlkListaUnidadesTerritoriais_2" href="javascript: abreJanelaListaUnidadesTerritoriais(1612,3,&#39;P&#39;)">Listar unidades territoriais</a>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <span style="color:Red; font-weight:bold">/N</span><span id="lstNiveisTerritoriais_lblIdNivelterritorial_3" style="color:Red; font-weight:bold">8</span><span style="color:Red; font-weight:bold">/</span>
+                    <span id="lstNiveisTerritoriais_lblNomeNivelterritorial_3">Mesorregião Geográfica</span><span id="lstNiveisTerritoriais_lblPeriodoDisponibilidade_3"> [1990 a 2018]</span><span id="lstNiveisTerritoriais_lblQuantidadeUnidadesTerritoriais_3">(137)</span>
+                    &nbsp;&nbsp;<a id="lstNiveisTerritoriais_hlkListaUnidadesTerritoriais_3" href="javascript: abreJanelaListaUnidadesTerritoriais(1612,8,&#39;P&#39;)">Listar unidades territoriais</a>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <span style="color:Red; font-weight:bold">/N</span><span id="lstNiveisTerritoriais_lblIdNivelterritorial_4" style="color:Red; font-weight:bold">9</span><span style="color:Red; font-weight:bold">/</span>
+                    <span id="lstNiveisTerritoriais_lblNomeNivelterritorial_4">Microrregião Geográfica</span><span id="lstNiveisTerritoriais_lblPeriodoDisponibilidade_4"> [1990 a 2018]</span><span id="lstNiveisTerritoriais_lblQuantidadeUnidadesTerritoriais_4">(558)</span>
+                    &nbsp;&nbsp;<a id="lstNiveisTerritoriais_hlkListaUnidadesTerritoriais_4" href="javascript: abreJanelaListaUnidadesTerritoriais(1612,9,&#39;P&#39;)">Listar unidades territoriais</a>
+                </td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <span style="color:Red; font-weight:bold">/N</span><span id="lstNiveisTerritoriais_lblIdNivelterritorial_5" style="color:Red; font-weight:bold">6</span><span style="color:Red; font-weight:bold">/</span>
+                    <span id="lstNiveisTerritoriais_lblNomeNivelterritorial_5">Município</span><span id="lstNiveisTerritoriais_lblQuantidadeUnidadesTerritoriais_5">(5.563)</span>
+                    &nbsp;&nbsp;<a id="lstNiveisTerritoriais_hlkListaUnidadesTerritoriais_5" href="javascript: abreJanelaListaUnidadesTerritoriais(1612,6,&#39;P&#39;)">Listar unidades territoriais</a>
+                </td>
+            </tr>
+        
+            </table>
+        
+    </p>
+    
+    <p>
+    <br /><span id="lblDescricao" class="tituloLinha">Nota:<br /><br /></span>
+    <span id="lblTextoDescricao"><p>1 - Os munic&iacute;pios sem informa&ccedil;&atilde;o para pelo menos um produto da lavoura tempor&aacute;ria n&atilde;o aparecem nas listas;<br /><br />2 - A partir do ano de <strong>2001</strong> as quantidades produzidas dos produtos <strong>melancia</strong> e <strong>mel&atilde;o</strong> passam a ser expressas em <strong>toneladas</strong>. Nos anos anteriores eram expressas em <strong>mil frutos</strong>. O rendimento m&eacute;dio passa a ser expresso em <strong>Kg/ha</strong>. Nos anos anteriores era expresso em <strong>frutos/ha</strong>.<br /><br />3 - Veja o&nbsp;documento <a href="https://sidra.ibge.gov.br/content/documentos/pam/AlteracoesUnidadesMedidaFrutas.pdf" target="_blank" rel="noopener">AlteracoesUnidadesMedidaFrutas.pdf</a> com as altera&ccedil;&otilde;es de unidades de medida das frut&iacute;feras ocorridas em 2001 e a tabela de convers&atilde;o fruto x quilograma.<br /><br />4 - Os produtos <strong>girassol</strong> e <strong>triticale</strong> s&oacute; apresentam informa&ccedil;&atilde;o a partir de <strong>2005</strong>.<br /><br />5 - A quantidade produzida de <strong>abacaxi</strong> &eacute; expressa em <strong>mil frutos</strong> e o rendimento m&eacute;dio em <strong>frutos/ha</strong>.<br /><br />6 - Valores para a categoria <strong>Total</strong> indispon&iacute;veis para as vari&aacute;veis <strong>Quantidade produzida </strong>e<strong> Rendimento m&eacute;dio, </strong>pois as unidades de medida diferem para determinados produtos.<br /><br />7 - Subentende a possibilidade de cultivos sucessivos ou simult&acirc;neos (simples, associados e/ou intercalados) no mesmo ano e no mesmo local, podendo, por isto, a &aacute;rea informada da cultura exceder a &aacute;rea geogr&aacute;fica do munic&iacute;pio.<br /><br />8 - As culturas de <strong>abacaxi, </strong><strong>cana-de-a&ccedil;&uacute;car, mamona </strong>e <strong>mandioca</strong> s&atilde;o consideradas culturas tempor&aacute;rias de longa dura&ccedil;&atilde;o. Elas costumam ter ciclo vegetativo que ultrapassa 12 meses e, por isso, as informa&ccedil;&otilde;es s&atilde;o computadas nas colheitas realizadas dentro de cada ano civil (12 meses).<br />Nestas culturas a<strong> &aacute;rea plantada </strong>refere-se a<strong> &aacute;rea destinada &agrave; colheita no ano.</strong><br /><br />9 - A diferen&ccedil;a entre a &aacute;rea plantada e a &aacute;rea colhida na lavoura tempor&aacute;ria &eacute; considerada como &aacute;rea perdida.<br /><br />10 - A vari&aacute;vel <strong>&Aacute;rea plantada</strong> s&oacute; passou a ser informada a partir de 1988.<br /><br />11 -&nbsp;<strong>Valor da produ&ccedil;&atilde;o</strong>: Vari&aacute;vel derivada calculada pela m&eacute;dia ponderada das informa&ccedil;&otilde;es de quantidade e pre&ccedil;o m&eacute;dio corrente pago ao produtor, de acordo com os per&iacute;odos de colheita e comercializa&ccedil;&atilde;o de cada produto. As despesas de frete, taxas e impostos n&atilde;o s&atilde;o inclu&iacute;das no pre&ccedil;o.<br /><br />12 - Os dados do &uacute;ltimo ano divulgado s&atilde;o RESULTADOS PRELIMINARES e podem sofrer altera&ccedil;&otilde;es at&eacute; a pr&oacute;xima divulga&ccedil;&atilde;o.</p></span>
+    </p>
+    
+    <p> 
+    <br /><span class="tituloLinha">Fonte:</span>&nbsp;
+    <span id="lblFonte">IBGE - Produção Agrícola Municipal</span>    
+    </p>
+    
+</div>
+</form>                                       
+</body>
+</html>

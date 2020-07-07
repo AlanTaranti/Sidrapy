@@ -1,12 +1,10 @@
+import os
+
 import requests
 
+import sidrapy
 import sidrapy.server
 
-
-def test_connection():
-    url = sidrapy.resources.handler.ENDPOINT_BASE
-    r = requests.get(url, timeout=10)
-    assert r.status_code == 200
 
 
 def test_ping():
@@ -17,9 +15,10 @@ def test_ping():
 
 
 def test_sample_request():
-    url = sidrapy.resources.handler.ENDPOINT_BASE
     # api docs here: http://api.sidra.ibge.gov.br/home/ajuda
-    url += "/values/t/1612/p/2018/v/allxp/n1/1/d/m/h/y"
+    url = sidrapy.server.create_url(
+        '/values/t/1612/p/2018/v/allxp/n1/1/d/m/h/y'
+    )
     r = requests.get(url, timeout=10)
     assert r.status_code == 200
     sample_response = (
@@ -95,3 +94,13 @@ def test_server_get():
     )
     response = sidrapy.server.get(path)
     assert response == expected_response
+
+
+def test_table_metadata():
+    code = 1612
+    table = sidrapy.Table(code)
+    d = os.path.dirname(os.path.abspath(__file__))
+    with open(os.path.join(d, '../expected_raw_1612.txt')) as f:
+        expected = f.read()
+    raw = table.metadata.raw
+    assert raw == expected

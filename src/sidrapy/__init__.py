@@ -1,1 +1,1 @@
-from .table import get_table
+from .table import Table

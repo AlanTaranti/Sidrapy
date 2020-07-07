@@ -19,7 +19,8 @@ def create_url(path: str):
     """Creates api url"""
 
     info = dict(
-        schema="http", netloc=ADDRESS, path=path, params="", query="", fragment="",
+        schema="http", netloc=ADDRESS, path=path,
+        params="", query="", fragment="",
     )
     url = urllib.parse.urlunparse(info.values())
     return url
